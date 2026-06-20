@@ -1,0 +1,320 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>522 - Connection Timed Out | SeeShell BD</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        :root{
+            --bg:#ffffff;
+            --card:#fafafa;
+            --border:#e5e5e5;
+            --text:#0a0a0a;
+            --muted:#737373;
+        }
+
+        body{
+            font-family:'Inter',sans-serif;
+            background:var(--bg);
+            color:var(--text);
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:24px;
+        }
+
+        .container{
+            width:100%;
+            max-width:900px;
+        }
+
+        .card{
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:24px;
+            padding:48px;
+            position:relative;
+            overflow:hidden;
+        }
+
+        .badge{
+            display:inline-flex;
+            align-items:center;
+            gap:8px;
+            padding:8px 14px;
+            border:1px solid var(--border);
+            border-radius:999px;
+            font-size:12px;
+            font-weight:600;
+            letter-spacing:.05em;
+            text-transform:uppercase;
+            background:#fff;
+        }
+
+        .badge::before{
+            content:'';
+            width:8px;
+            height:8px;
+            border-radius:50%;
+            background:#000;
+        }
+
+        h1{
+            font-size:clamp(64px,10vw,120px);
+            font-weight:900;
+            line-height:1;
+            margin-top:24px;
+        }
+
+        h2{
+            font-size:clamp(24px,4vw,42px);
+            margin-top:12px;
+            font-weight:800;
+        }
+
+        p{
+            margin-top:18px;
+            color:var(--muted);
+            font-size:16px;
+            line-height:1.8;
+            max-width:700px;
+        }
+
+        .status-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+            gap:16px;
+            margin-top:40px;
+        }
+
+        .status-box{
+            border:1px solid var(--border);
+            border-radius:16px;
+            padding:20px;
+            background:#fff;
+        }
+
+        .status-label{
+            font-size:12px;
+            text-transform:uppercase;
+            letter-spacing:.08em;
+            color:var(--muted);
+            margin-bottom:10px;
+        }
+
+        .status-value{
+            font-size:18px;
+            font-weight:700;
+        }
+
+        .working{
+            color:#000;
+        }
+
+        .footer{
+            margin-top:40px;
+            padding-top:24px;
+            border-top:1px solid var(--border);
+            display:flex;
+            flex-wrap:wrap;
+            gap:16px;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .brand{
+            font-size:20px;
+            font-weight:900;
+            letter-spacing:-0.02em;
+        }
+
+        .subtext{
+            color:var(--muted);
+            font-size:14px;
+        }
+
+        .btn{
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            padding:12px 20px;
+            border-radius:12px;
+            background:#000;
+            color:#fff;
+            text-decoration:none;
+            font-weight:600;
+            transition:.2s ease;
+        }
+
+        .btn:hover{
+            opacity:.9;
+        }
+
+        .background-number{
+            position:absolute;
+            top:-40px;
+            right:-20px;
+            font-size:220px;
+            font-weight:900;
+            color:#f1f1f1;
+            user-select:none;
+            pointer-events:none;
+        }
+
+        @media(max-width:768px){
+
+            .card{
+                padding:32px 24px;
+            }
+
+            .background-number{
+                font-size:140px;
+            }
+
+            .footer{
+                flex-direction:column;
+                align-items:flex-start;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="background-number">
+            522
+        </div>
+
+
+        <div class="badge">
+            Major Update In Progress
+        </div>
+
+
+        <h1>
+            522
+        </h1>
+
+
+        <h2>
+            We're Performing a Major Update
+        </h2>
+
+
+        <p>
+            SeeShell BD is currently undergoing a major update to improve your shopping experience.
+            We are upgrading our infrastructure, improving performance, and making the platform faster,
+            safer, and more reliable.
+        </p>
+
+
+        <p>
+            Our fashion platform is temporarily unavailable while our team completes important system
+            improvements. We will be back online shortly with a better experience for our customers.
+        </p>
+
+
+        <div class="status-grid">
+
+
+            <div class="status-box">
+
+                <div class="status-label">
+                    Website
+                </div>
+
+                <div class="status-value">
+                    Temporarily Unavailable
+                </div>
+
+            </div>
+
+
+
+            <div class="status-box">
+
+                <div class="status-label">
+                    Major Update
+                </div>
+
+                <div class="status-value working">
+                    In Progress
+                </div>
+
+            </div>
+
+
+
+
+            <div class="status-box">
+
+                <div class="status-label">
+                    Customer Data
+                </div>
+
+                <div class="status-value">
+                    Protected
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="footer">
+
+
+            <div>
+
+                <div class="brand">
+                    SEESHELL BD
+                </div>
+
+
+                <div class="subtext">
+                    Fashion • Lifestyle • Premium Shopping Experience
+                </div>
+
+
+            </div>
+
+
+
+            <a href="/" class="btn">
+                Try Again Later
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
+```
